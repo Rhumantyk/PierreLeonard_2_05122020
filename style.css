@@ -113,6 +113,16 @@ a
 	text-decoration: none;
 }
 
+.logo-nav-anchors .activites-a
+{
+	padding-bottom: 13px;
+}
+
+.logo-nav-anchors .hebergement-a
+{
+	padding-bottom: 13px;
+}
+
 .logo-nav-anchors a:link
 {
 	color: #0065FC;
@@ -579,8 +589,7 @@ form
 	{
 		margin: 0%;
 		width: 100%;
-		/* justify-content: center; */
-		padding-left: 12px;
+		padding-left: 6px;
 	}
 }
 
@@ -1280,7 +1289,15 @@ span
 	{
 		margin: inherit;
 		margin-top: 10px;
-		width: 265px;
+		width: 59%;
+	}
+}
+
+@media  (min-width: 1894px) and (max-width: 1920px)
+{
+	.hotel-cards-marseille
+	{
+		width: 22.5%;
 	}
 }
 
@@ -1611,7 +1628,7 @@ span
 .hotel-cards-popular
 {
 	display: inline-flex;
-	width: 89%;
+	width: 93%;
 	height: 144px;
 	border-radius: 20px;
 	background-color: white;
