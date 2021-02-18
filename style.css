@@ -44,6 +44,14 @@ body
 	padding-left: 60px;
 }
 
+@media  (min-width: 320px) and (max-width: 768px)
+{
+	.logo
+	{
+		padding-left: 8%;
+	}
+}
+
 /*Tous les liens cliquables dans sections (2) + aside + footer*/
 .a
 {
@@ -343,7 +351,7 @@ a
 
 	.s-inscrire a
 	{
-		padding-right: 60px;
+		padding-right: 9%;
 		/* padding-left: 37px; */
 		align-items: center;
 	}
@@ -540,7 +548,7 @@ a
 {
 	.text-search-bar-initial span
 	{
-		margin-top: -23px;
+		margin-top: 6px; /* -23 à l'origine, bug sur Firefox */
 	}
 }
 
@@ -558,6 +566,22 @@ a
 	{
 		margin-top: 21px;
 		font-size: 1.35em;
+	}
+}
+
+@media  (min-width: 425px) and (max-width: 570px) /* Espace phrases marche pas FireFox */
+{
+	.text-search-bar-initial
+	{
+		display: inherit;
+	}
+
+	@-moz-document url-prefix() 
+	{
+		.text-search-bar-initial
+		{
+			display: flex;
+		}
 	}
 }
 
@@ -758,7 +782,7 @@ span
 	border: 2.5px solid #D5D8DC;
     height: 48px;
 	padding-right: 15px;
-	margin-right: 5.3%;
+	margin-right: 19px; /* Originellement 5.3% */
 	border-radius: 1000px; 
 	font-size: large;  
 }
@@ -774,7 +798,7 @@ span
 	}
 }
 
-@media  (min-width: 769px) and (max-width: 1097px)
+@media  (min-width: 769px) and (max-width: 988px)
 {
 	.dog
 	{
@@ -1046,7 +1070,7 @@ span
 	max-width: 100%;
 	height: auto;
 	margin-top: 20px;
-	padding-left: 55px;	
+	padding-left: 47px;	/* original 55px */
 }
 
 @media  (min-width: 320px) and (max-width: 768px) /*Inversion des 2 sections*/
@@ -1267,9 +1291,10 @@ span
 .hotel-cards-marseille img
 {
 	height: 114px;
+	width: 96.2%; /* Originellement : Rien */
 	border-radius: 20px 20px 0px 0px;
 	background-color: white;
-	object-fit: none;
+	object-fit: cover; /* Originellement : none */
 	padding: 5px 5px 0px 5px;
 }
 
@@ -1293,7 +1318,7 @@ span
 	}
 }
 
-@media  (min-width: 1894px) and (max-width: 1920px)
+@media  (min-width: 1887px) and (max-width: 1920px)
 {
 	.hotel-cards-marseille
 	{
@@ -1468,7 +1493,7 @@ span
 	.popular-title
 	{
 		width: 100%;
-		justify-content: space-around;
+		/* justify-content: space-around; */
 		align-items: inherit;
 		margin-bottom: inherit;
 		padding-top: 15px;
@@ -1480,13 +1505,30 @@ span
 	.popular-title
 	{
 		width: 100%;
-		justify-content: space-around;
+		/* justify-content: space-around; */
 		align-items: inherit;
 		margin-bottom: inherit;
 		padding-top: 0px;
-		position: sticky;
 		top: 0px;
 		background-color: #F2F2F2; 
+	}
+}
+
+@media  (min-width: 320px) and (max-width: 426px)
+{
+	.popular-title
+	{
+		justify-content: space-between;	
+	}
+
+	.fa-chart-line:before
+	{
+		padding-right: 15px;
+	}
+
+	.popular-title h1
+	{
+		padding-left: 15px;
 	}
 }
 
