@@ -1,6 +1,5 @@
 html 
-{ 
-	
+{
 	margin:0;
 	padding:0;
 	width:100%;
@@ -25,7 +24,6 @@ html
 
 body
 {
-	
 	font-family: Raleway;
 	background-color: white;
 	margin:0;
@@ -55,7 +53,7 @@ body
 /*Tous les liens cliquables dans sections (2) + aside + footer*/
 .a
 {
-	display: contents; /*Pourquoi ça fonctionne sans padding ?*/
+	display: contents;
 	color: black;
 }
 
@@ -143,102 +141,6 @@ a
 
 @media  (min-width: 320px) and (max-width: 768px)
 {
-	/* .logo
-	{
-		padding-left: 28%;  Pour bouger Logo 
-		padding-top: 33px;
-		margin-left: -19%;
-	}
-
-	nav
-	{
-		width: 100%;
-		margin-top: 0px;
-		display: flex;
-		justify-content: flex-end;
-	}
-
-	li
-	{
-		width: 50%;
-	}
-
-	.all-links
-	{
-		display: flex;
-		justify-content: flex-end;
-		width: 100%;
-    	flex-direction: row;
-    	flex-wrap: wrap;
-	}
-
-	.nav-img
-	{
-		width: 50%;
-		position: absolute;
-	}
-
-	.activites
-	{
-		margin-left: 0%;
-		padding-left: 0%;
-	}
-
-	.hebergement
-	{
-		
-	}
-
-	.nav-1-link
-	{
-		order: 1;
-		margin-right: -49px;  Pour bouger s'inscrire 
-	}
-
-	.nav-2-links
-	{
-		order: 2;
-		justify-content: center;
-		width: 100%;
-	}
-
-	.logo-nav-anchors a:hover
-	{
-		display: inline-block;
-		border-top: none;
-		width: 100%;
-		padding-top: 46px;
-	}
-
-	.logo-nav-anchors a:active
-	{
-		overflow: inherit;
-		padding-top: 46px; Pour éviter que au clic ça bouge 
-		padding-bottom: 10px; Pour faire baisser la barre bleue 
-	}
-
-	.s-inscrire a:active
-	{
-		border-bottom: inherit;
-	}
-
-	.activites:active
-	{
-		border-bottom: #0008ff 4px solid;
-		width: 50%;
-	}
-  
-	.hebergement:active
-	{
-		border-bottom: #0008ff 4px solid;
-		width: 50%;
-	} */
-
-	/* .font-filters:active 
-	
-	
-	.font-filters:active .fas, .fas:active  */
-
 	.logo-nav-anchors a:hover
 	{
 		display: inline-block;
@@ -309,17 +211,14 @@ a
 
 	.all-links
 	{
-		/* display: flex; */
 		justify-content: flex-end;
 		width: 100%;
-    	/* flex-direction: row; */
     	flex-wrap: wrap;
 	}
 
 	.nav-2-links
 	{
 		order: 2;
-
 		justify-content: center;
 		width: 100%;
 	}
@@ -352,87 +251,9 @@ a
 	.s-inscrire a
 	{
 		padding-right: 9%;
-		/* padding-left: 37px; */
 		align-items: center;
 	}
 }
-
-/* @media  (min-width: 426px) and (max-width: 768px)
-{
-	hr
-	{
-		display: none;
-	}
-
-	.logo-nav-anchors a:active
-	{
-		overflow: inherit;
-		padding-top: 46px;  pour éviter qu'au clic ça bouge verticalement 
-		padding-bottom: 10px;  Pour faire baisser la barre bleue 
-	}
-} */
-/* 
-@media  (min-width: 320px) and (max-width: 376px)
-{
-	.nav-2-links
-	{
-		order: 2;
-		justify-content: center;
-		width: 100%;
-	}
-}
-
-@media  (min-width: 377px) and (max-width: 426px)
-{
-	.nav-2-links
-	{
-		order: 2;
-		justify-content: center;
-		width: 100%;
-	}
-
-	.hebergement:active
-	{
-		width: auto;
-	}
-
-	.activites:active
-	{
-		width: auto;
-	}
-}
-
-@media  (min-width: 426px) and (max-width: 768px)
-{
-	.nav-2-links
-	{
-		order: 2;
-		justify-content: center;
-		width: 81%;
-		position: absolute;
-		top: 51px;
-	}
-
-	.hebergement:active
-	{
-		border-bottom: none;
-		width: auto;
-	}
-
-	.activites:active
-	{
-		border-bottom: none;
-		width: auto;
-	}
-}
-
-@media  (min-width: 500px) and (max-width: 768px)
-{
-	.nav-2-links
-	{
-		width: 83%;
-	}
-} */
 
 /*Text search bar*/
 .text-search-bar-filters
@@ -462,7 +283,6 @@ a
 {
 	display: flex;
 	flex-direction: column;
-	
 	font-size: 1.4em;
 }
 
@@ -481,7 +301,6 @@ a
 	.text-search-bar-filters .text-search-bar
 	{
 		display: inline-flex;
-		/* justify-content: center; */
 		width: 100%;
 		font-size: 1.35em;
 		padding-left: 12px;
@@ -501,8 +320,6 @@ a
 	.text-search-bar-initial
 	{
 		display: none;
-		/* padding-left: 12px;
-		align-items: flex-start; */
 	}
 }
 
@@ -586,7 +403,6 @@ a
 }
 
 /* Search bar */
-
 .search-bar
 {
 	display: flex;
@@ -638,11 +454,11 @@ label
 	width: 52px;
 	height: 51px;
 	color: black;
-	margin-top: 0px; /* pourquoi tout bouge ? --> inline-block ? */
+	margin-top: 0px;
 	padding-bottom: 1px;
 }
 
-.fa-map-marker-alt:before /* comment ça marche ? */
+.fa-map-marker-alt:before
 {
     content: "\f05a";
     line-height: 3.1;
@@ -722,7 +538,7 @@ button
 
 	.button .fas:hover /*Carré blanc sur <i> supprimé*/
 	{
-		background-color: inherit; /*Pas compris pourquoi, approfondir*/
+		background-color: inherit;
 	}
 }
 
@@ -782,7 +598,7 @@ span
 	border: 2.5px solid #D5D8DC;
     height: 48px;
 	padding-right: 15px;
-	margin-right: 19px; /* Originellement 5.3% */
+	margin-right: 19px;
 	border-radius: 1000px; 
 	font-size: large;  
 }
@@ -817,7 +633,7 @@ span
 	background-color:  #F2F2F2;
 }
 
-@media  (min-width: 320px) and (max-width: 768px) /* Remplacement hover par active tablette and less */
+@media  (min-width: 320px) and (max-width: 768px)
 {
 	.font-filters:hover
 	{
@@ -826,12 +642,12 @@ span
 	
 	.font-filters:hover .fas, .fas:hover
 	{
-		background-color:  #F2F2F2; /*none ne fonctionnant pas, acitve prend le dessu*/
+		background-color:  #F2F2F2; 
 	}
 
 	.font-filters:active 
 	{
-		border-color: #0065FC; /*none ne fonctionnant pas, acitve prend le dessu*/
+		border-color: #0065FC;
 	}
 	
 	.font-filters:active .fas, .fas:active 
@@ -892,7 +708,7 @@ span
     margin-left: -2px;
 }
 
-.fa-money-bill-wave:before /* comment ça marche ? */
+.fa-money-bill-wave:before
 {
     content: "\f53a";
     line-height: 2.9;
@@ -1172,7 +988,7 @@ span
 	}
 }
 
-@media  (min-width: 769px) and (max-width: 1118px) /* 932 initial */
+@media  (min-width: 769px) and (max-width: 1118px)
 {
 	.popularity
 	{
@@ -1291,10 +1107,10 @@ span
 .hotel-cards-marseille img
 {
 	height: 114px;
-	width: 96.2%; /* Originellement : Rien */
+	width: 96.2%;
 	border-radius: 20px 20px 0px 0px;
 	background-color: white;
-	object-fit: cover; /* Originellement : none */
+	object-fit: cover;
 	padding: 5px 5px 0px 5px;
 }
 
@@ -1434,13 +1250,11 @@ span
 		justify-content: center;
 		align-items: center;
 		width: 100%;
-		/* height: 247px; */
 		flex-wrap: wrap;
 		background-color: #F2F2F2;
 		border-radius: 20px;
-		flex-direction: row; /* Test encarts */
+		flex-direction: row;
 		overflow: auto;
-		/* box-shadow: -5px 5px 15px #d9d9d9; */
 	}
 }
 
@@ -1493,7 +1307,6 @@ span
 	.popular-title
 	{
 		width: 100%;
-		/* justify-content: space-around; */
 		align-items: inherit;
 		margin-bottom: inherit;
 		padding-top: 15px;
@@ -1505,7 +1318,6 @@ span
 	.popular-title
 	{
 		width: 100%;
-		/* justify-content: space-around; */
 		align-items: inherit;
 		margin-bottom: inherit;
 		padding-top: 0px;
@@ -1582,8 +1394,6 @@ span
 	{
 		padding-left: 8px;	
 	}
-
-	
 }
 
 @media  (min-width: 768px) and (max-width: 850px)
@@ -1761,7 +1571,6 @@ aside
 	max-width: 100%;
 	margin-top: 70px;
 	padding-left: 30px;
-	/* margin-right: -27px; */
 }
 
 aside h1
@@ -1838,6 +1647,14 @@ aside h1
 	justify-content: space-between;
 }
 
+@media  (min-width: 1308px) and (max-width: 1331px)
+{
+	.fort-iles
+	{
+		padding-right: 18px;
+	}
+}
+
 
 .dame-longchamp
 {
@@ -1845,7 +1662,6 @@ aside h1
 	flex-direction: column;
 	justify-content: space-between;
 }
-
 
 @media  (min-width: 320px) and (max-width: 768px)
 {
@@ -1859,6 +1675,14 @@ aside h1
 	.activity-dame
 	{
 		margin-top: -390px;
+	}
+}
+
+@media  (min-width: 1308px) and (max-width: 1331px)
+{
+	.dame-longchamp
+	{
+		padding-right: 18px;
 	}
 }
 
@@ -2198,5 +2022,4 @@ aside h1
 		margin-bottom: 35px;
 	}
 }
-
 /* ---- Fin Footer ---- */
